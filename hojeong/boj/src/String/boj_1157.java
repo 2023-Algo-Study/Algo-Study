@@ -10,30 +10,6 @@ public class boj_1157 {
 
         // 자바에 소문자, 대문자 변환, 정렬, HashMap 있음. 다시 풀어보자
 
-        // 1.
-        // char[] array = br.readLine().toUpperCase().toCharArray();
-        // int[] alpha = new int[26];
-
-        // for (int i=0; i<array.length; i++) {
-        //     int index = array[i] - 'A'; // -65와 같음
-        //     alpha[index]++;
-        // }
-
-        // int max = Arrays.stream(alpha).max().getAsInt();
-        // ArrayList<Character> list = new ArrayList<>();
-        // for (int i=0; i<alpha.length; i++) {
-        //     if (alpha[i] == max) {
-        //         list.add((char)('A' + i));
-        //     }
-        // }
-        
-        // if (list.size() > 1) {
-        //     System.out.println("?");
-        // } else {
-        //     System.out.println(list.get(0));
-        // }
-    
-
         String s = br.readLine().toUpperCase(); 
         String[] array = s.split("");
         // array 안 만들고 s.charAt(i) 이렇게 해도 동일함
